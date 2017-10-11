@@ -1,9 +1,10 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import { gql, graphql } from 'react-apollo'
+import gql from 'graphql-tag'
+import { graphql } from 'react-apollo'
 import Sticker from './sticker'
-import { RoomQuery } from './room'
+import { RoomQuery } from './fetchOrCreateRoom'
 
 class Whiteboard extends React.PureComponent {
   state = {
